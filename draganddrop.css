@@ -1,0 +1,25 @@
+/* 
+    Document   : draganddrop
+    Created on : Dec 31, 2010, 3:30:19 PM
+    Author     : peter
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.drag {
+    border: 2px solid black;
+    border-top:  20px solid black;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+    width: 150px;
+}
+
+#drag1 {left: 20px;}
+#drag2 {left: 200px;}
+#drag3 {left: 500px;}

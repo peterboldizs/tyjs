@@ -1,0 +1,15 @@
+
+img.slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 640px;
+    height: 480px;
+}
+
+

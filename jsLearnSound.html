@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Sound test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function playSound() {
+            var sound = document.getElementById("mywav");
+            try {
+                sound.doPlay();
+            } catch(e) {
+                try {
+                    sound.play();
+                } catch(e) {
+                    alert("no sound support");
+                }
+            }
+        }
+    </script>
+  </head>
+  <body>
+      <h2>Play sounds</h2>
+      <object id="mywav" type="audio/x-wav" data="A0.wav" width="200" height="100">
+          <param name="src" value="A0.wav">
+          <param name="autostart" value="false">
+      </object>
+      <br>
+      <input type="button" value="Play mp3" onclick="playSound();"
+  </body>
+</html>

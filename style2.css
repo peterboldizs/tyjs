@@ -1,0 +1,40 @@
+
+body {
+    font-family: Times, "Times New Roman", sans-serif;
+    font-size: 12pt;
+}
+
+P {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+    text-indent: 0%;
+}
+
+B {
+    background-color: aqua;
+    color: black;
+}
+
+I {
+    color: red;
+}
+
+H1 {
+    font-size: 200%;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+UL {
+    background-color: yellow;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+
+li {
+    margin-top: 20px;
+}
+
+

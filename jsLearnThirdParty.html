@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="effects.js"></script>
+  </head>
+  <body>
+      <h2>Testing script.aculo.us effects</h2>
+      <form name="form1">
+          <input type="button" value="Fade out" onclick="new Effect.Fade($('test'))">
+          <input type="button" value="Fade in" onclick="new Effect.Appear($('test'))">
+          <input type="button" value="Slide up" onclick="new Effect.SlideUp($('test'))">
+          <input type="button" value="Slide down" onclick="new Effect.SlideDown($('test'))">
+          <input type="button" value="Highlight" onclick="new Effect.Highlight($('test'))">
+          <input type="button" value="Shake" onclick="new Effect.Shake($('test'))">
+      </form>
+      <div id="test" style="background-color: #CCC; margin: 20px; padding: 10px;">
+          <h3>testing effects</h3>
+          <hr>
+          <p>
+              This is a section to be tested with script.aculo.us effects.
+              Event handlers on the buttons send this object to the
+              <a href="http://script.aculo.us">script.aculo.us</a> library to perform effects.
+          </p>
+      </div>
+  </body>
+</html>

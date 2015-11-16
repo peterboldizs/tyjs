@@ -1,0 +1,24 @@
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+body {
+    color: blue;
+}
+p {
+    background-color: cadetblue;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h1,h2,h3 {
+    color: red;
+}
+ul {
+    background-color: orange;
+    color: green;
+}

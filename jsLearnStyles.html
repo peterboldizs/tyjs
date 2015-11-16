@@ -1,0 +1,50 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Learning stylesheets</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <script type="text/javascript" src="mystyles.js"></script>
+  </head>
+  <body>
+      <h1 id="head1">This is heading 1 - style can be changed dynamically</h1>
+      <p id="p1">
+          This is a paragraph whose style is controlled by a stylesheet.
+          The fonts and colors are described in the mystyle.css file.
+          The fonts and colors are described in the mystyle.css file.
+          The fonts and colors are described in the mystyle.css file.
+          The fonts and colors are described in the mystyle.css file.
+      </p>
+      <p style="color:red">This paragraph has a locally controlled style.</p>
+      <ul>
+          <li>This is item 1</li>
+          <li>This is item 2, different</li>
+          <li>This is item 3</li>
+      </ul>
+      <p>this is another default paragraph</p>
+      <form name="form1">
+          Heading color:
+          <select name="heading" onchange="changeHead();">
+              <option value="black">black</option>
+              <option value="blue">blue</option>
+              <option value="green">green</option>
+              <option value="yellow">yellow</option>
+              <option value="orange">orange</option>
+              <option value="red">red</option>
+          </select><br>
+          Body color:
+          <select name="body" onchange="changeBody();">
+              <option value="black">black</option>
+              <option value="blue">blue</option>
+              <option value="green">green</option>
+              <option value="yellow">yellow</option>
+              <option value="orange">orange</option>
+              <option value="red">red</option>
+          </select><br>
+      </form>
+  </body>
+</html>

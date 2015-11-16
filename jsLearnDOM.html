@@ -1,0 +1,34 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Learning DOM</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        Parts of DOM document:
+        <pre>
+      <script type="text/javascript">
+          document.writeln("document.URL: " + document.URL);
+          document.writeln("document.title: " + document.title);
+          document.writeln("document.referrer: " + document.referrer);
+          document.writeln("document.lastModified: " + document.lastModified);
+          document.writeln("document.bgColor: " + document.bgColor);
+          document.writeln("document.linkColor: " + document.linkColor);
+          document.writeln("document.cookie: " + document.cookie);
+          document.writeln("document.domain: " + document.domain);
+          document.writeln("history.length: " + history.length);
+          document.writeln("time: " + new Date());
+
+                   </script>
+        </pre>
+
+        <input type="button" onclick="history.back();" value="<- Back"/>
+        <input type="button" onclick="history.forward();" value="Forward ->"/><br
+        <a href="jsLearnBasics.html">go to basics</a><br>
+        <input type="button" onclick="location.reload();" value="Reload page"/>
+    </body>
+</html>

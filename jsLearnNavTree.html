@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Navigation tree example</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            A {
+                text-decoration: none;
+            }
+            #productsmenu,#supportmenu,#contactmenu {
+                display: none;
+                margin-left: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Navigation tree</h2>
+        <p>The tree below allows expand and collapse items</p>
+        <ul>
+            <li><a id="products" href="#">[+] products</a>
+                <ul id="productsmenu">
+                    <li><a href="prod.html">product list</a> </li>
+                    <li><a href="order.html">order product</a> </li>
+                    <li><a href="price.html">price list</a> </li>
+                </ul>
+            </li>
+            <li><a id="support" href="#">[+] support</a>
+                <ul id="supportmenu">
+                    <li><a href="forum.html">forum</a> </li>
+                    <li><a href="sup.html">customer support</a> </li>
+                </ul>
+            </li>
+            <li><a id="contact" href="#">[+] contact</a>
+                <ul id="contactmenu">
+                    <li><a href="c1.html">sales</a> </li>
+                    <li><a href="c2.html">service</a> </li>
+                </ul>
+            </li>
+        </ul>
+        <script type="text/javascript" src="mynavtree.js"></script>
+    </body>
+</html>

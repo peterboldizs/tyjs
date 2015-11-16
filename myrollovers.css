@@ -1,0 +1,51 @@
+/* 
+    Document   : myrollovers
+    Created on : Dec 30, 2010, 5:53:18 PM
+    Author     : peter
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#home,#archives {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#home:hover, #archives:hover {
+    background-color: #AAAAAA;
+}
+
+#home2 {
+    display: block;
+    height: 30px;
+    width: 120px;
+    background-image: url("btn1.gif");
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+#home2:hover {
+    background-image: url("btn2.gif");
+}
+
+#archives2 {
+    display: block;
+    height: 30px;
+    width: 120px;
+    background-image: url("btn3.gif");
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+#archives2:hover {
+    background-image: url("btn4.gif");
+}
+
+
+

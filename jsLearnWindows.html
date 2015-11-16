@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Creating windows</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function doIt() {
+                if(document.form1.w.value && document.form1.h.value) {
+                    self.resizeTo(document.form1.w.value, document.form1.h.value);
+                }
+                if(document.form1.x.value && document.form1.y.value) {
+                    self.moveTo(document.form1.x.value, document.form1.y.value);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p>Use the buttons to handle windows</p>
+        <hr>
+        <form name="winform">
+            <input type="button" value="open new window"
+                   onclick="NewWin = window.open('', 'NewWin', 'toolbar=no,status=no,width=200,height=100'); ">
+            <input type="button" value="close new window"
+                   onclick="NewWin.close(); ">
+            <input type="button" value="close main window"
+                   onclick="window.close(); ">
+        </form>
+        <hr>
+        <p>Moving and resizing windows</p>
+        <form name="form1">
+            width: <input type="text" name="w"><br>
+            height: <input type="text" name="h"><br>
+            x-pos: <input type="text" name="x"><br>
+            y-pos: <input type="text" name="y"><br>
+            <input type="button" value="change window" onclick="doIt();">
+        </form>
+        <hr>
+        <form name="winform2">
+            <input type="button" value="alert" onclick="window.alert('this is an alert');">
+            <input type="button" value="confirmation" onclick="window.confirm('do you want to confirm?')">
+            <input type="button" value="prompt" onclick="window.prompt('enter some text: ', 'default value')">
+        </form>
+
+    </body>
+</html>

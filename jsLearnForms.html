@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Form example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function displayForm() {
+            dispWin = window.open('', 'dispWin', 'toolbar=no,status=no,width=200,height=200');
+            msg = "<ul><li>name: " + document.form1.yourname.value;
+            msg += "<li>address:  " + document.form1.address.value;
+            msg += "<li>phone:  " + document.form1.phone.value + "</ul>";
+            dispWin.document.write(msg);
+        }
+
+        function validateForm() {
+            if(document.form1.yourname.value < 2) {
+                alert('name must be at least 2 characters');
+                return false;
+            }
+            if(document.form1.address.value < 2) {
+                alert('address must be at least 2 characters');
+                return false;
+            }
+            if(document.form1.phone.value < 2) {
+                alert('phone must be at least 2 characters');
+                return false;
+            }
+        }
+    </script>
+  </head>
+  <body>
+      <h1>Form example</h1>
+      <p>enter info and press button</p>
+      <form name="form1" onsubmit="validateForm();">
+          Name: <input type="text" size="30" name="yourname"><br>
+          Address: <input type="text" size="30" name="address"><br>
+          Phone: <input type="text" size="30" name="phone"><br>
+          <input type="button" value="Display" onclick="displayForm();"><br>
+          <input type="submit" value="Submit form">
+      </form>
+  </body>
+</html>

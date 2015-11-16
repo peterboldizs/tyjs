@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Further DOM options</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function showHide() {
+                if(!document.getElementById) return;
+                var head1 = document.getElementById("head1");
+                var head2 = document.getElementById("head2");
+                var par1 = document.getElementById("par1");
+                var showhead1 = document.form1.head1.checked;
+                var showhead2 = document.form1.head2.checked;
+                var showpar1 = document.form1.par1.checked;
+                head1.style.visibility = (showhead1) ? "visible" : "hidden";
+                head2.style.visibility = (showhead2) ? "visible" : "hidden";
+                par1.style.visibility = (showpar1) ? "visible" : "hidden";
+            }
+
+            function changeTitle() {
+                if(!document.getElementById) return;
+                var newtitle = document.form1.newtitle.value;
+                var head1 = document.getElementById("head1");
+                head1.firstChild.nodeValue = newtitle;
+            }
+
+            function addText() {
+                if(!document.getElementById) return;
+                var sentence = document.form1.sentence.value;
+                var textnode = document.createTextNode(" " + sentence);
+                document.getElementById("par1").appendChild(textnode);
+                document.form1.sentence.value = "";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="head1">This is the first heading</h1>
+        <h1 id="head2">This is the second heading</h1>
+        <form name="form1">
+            <p id="par1">Using the W3C DOM, you can choose to show or hide the headings
+                or this paragraph. You can even change the text of the first heading.</p>
+            <input type="checkbox" name="head1" checked onclick="showHide();">
+            <b>show first heading</b><br>
+            <input type="checkbox" name="head2" checked onclick="showHide();">
+            <b>show second heading</b><br>
+            <input type="checkbox" name="par1" checked onclick="showHide();">
+            <b>show paragraph</b><br>
+            <input type="text" name="newtitle" size="30">
+            <input type="button" value="change!" onclick="changeTitle();"><br>
+            <input type="text" name="sentence" size="65">
+            <input type="button" value="Add text" onclick="addText();">
+        </form>
+    </body>
+</html>
