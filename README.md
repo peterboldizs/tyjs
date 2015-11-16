@@ -1,0 +1,2 @@
+# tyjs
+teach yourself JavaScript
